@@ -1,6 +1,10 @@
 #BooruGet
+
+###Notice
+I just forked this project from the previous developer, If it seems like a shithsow, it's because it is.
+
 ##About
-This project downlads files from danbooru and gelbooru. It can run on all operating systems, but requires httplib2 to be installed. This is generally not installed on a default python3 install
+This project downlads files from danbooru and gelbooru. It can run on all operating systems, but requires httplib2 and python-qt4 to be installed. This is generally not installed on a default python3 install
 
 * This program is still very much in devlopment and is not very user friendly yet.
 
@@ -10,6 +14,7 @@ BooruGet  will create all required files/folders on first run.
 ###Dependencies
 * python3
 * httplib2
+* python-qt4
 
 ##Configuration
 All configuration files are stored in .config
@@ -71,6 +76,11 @@ For example: an error of .15 for 1920x1080 would allows pictures in the range fr
 By default, the program will ignore images that are smaller than the target size even if they are the correct aspect ratio. Using Anysize ignores this and will download all matches no matter what the size. For example, if you specify 1920x1080 the aspect ratio is 16:9, if a picture were only 1600x900 it would normally be ignored, however, with -a, it would be downloaded.
 
 ##Planned Features
-* GUI client for Windows and GTK
+* PyQt Gui
 * Better organization
 * Better README
+* Use SQL for as much as possible 
+* Merge all this into one file so its portable
+* Maybe machine learning that will have the user rate files so it can pass files the user is less likely to like
+* md5 magic
+* Who knows
